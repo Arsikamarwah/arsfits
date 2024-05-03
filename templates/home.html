@@ -5,10 +5,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our Blog</title>
+    <title>ARSFITS</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #880D1E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    margin-top: 80px;
+    min-height: 100vh;
+    background: white;
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+.navbar a:hover {
+    color: #F26A8D;
+}
+.container-background2 {
+    background-image: url(https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.8;
+    padding: 200px;
+
+}
+.container-background1 {
+    color: #F26A8D;
+    width: 100%;
+    margin: 0 auto;
+
+    
+}
+h1.bagian1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 55px;
+    text-shadow: 0 0 4px black;
+    color: #DD2D4A;
+}
+p.bagian1 {
+    justify-content: center;
+    text-shadow: 0 0 1px black;
+    font-weight: 500;
+}
+    </style>
 </head>
 <body>
-    <h1>Welcome to Our Blog</h1>
+    <header class="header">
+        <nav>
+            <a href="#" class="logo">ARSFITS</a>
+        </nav>
+        <nav class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CATEGORY</a>
+            <a href="#">RECOMMENDATION</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="container-background1">
+        <div class="container-background2">
+            <h1 class="bagian1">Hello Welcome To Arsfits</h1> 
+            <p class="bagian1">I believe that every step in our lives has a story worth telling, an experience worth sharing and a lesson that can be an inspiration to others. So, i hope you gais enjoy every visit and find something of value in every corner of this journey ♥︎</p>
+        </div>
+    </section>
+ 
+    
 
     <h2>Categories</h2>
     <ul>
